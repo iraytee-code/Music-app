@@ -10,6 +10,7 @@ module.exports = {
         primary: "#A4C7C6",
         altPrimary: "#A4C7C6",
         secondary: "#FACD66",
+        playlistBg: "#609EAF",
       },
       fontFamily: {
         quickSand: ["Quicksand, sans-serif"],
