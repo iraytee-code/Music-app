@@ -1,7 +1,15 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { ChartsCard, HitsCard } from "../../components";
 
 const DashBoard = () => {
-  return <div>DashBoard</div>;
+  return (
+    <Fragment>
+      <div className="grid overflow-hidden grid-cols-1 md:grid-cols-10 grid-rows-1 gap-1 md:gap-10 px-5 font-quickSand my-2 md:m-4">
+        <HitsCard />
+        <ChartsCard />
+      </div>
+    </Fragment>
+  );
 };
 
 export default DashBoard;
