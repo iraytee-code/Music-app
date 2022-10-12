@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { ChartsCard, HitsCard } from "../../components";
+import { ChartsCard, HitsCard, NewRelease } from "../../components";
 
 const DashBoard = () => {
   return (
@@ -8,6 +8,7 @@ const DashBoard = () => {
         <HitsCard />
         <ChartsCard />
       </div>
+      <NewRelease />
     </Fragment>
   );
 };

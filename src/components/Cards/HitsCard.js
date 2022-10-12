@@ -11,7 +11,7 @@ import { AiFillHeart } from "react-icons/ai";
 const HitsCard = () => {
   return (
     <Fragment>
-      <div className="p-2 md:p-4 bg-playlistBg rounded-[30px] md:rounded-[40px] relative col-span-1 md:col-span-6 ">
+      <div className="p-2 md:p-4 bg-playlistBg rounded-[30px] md:rounded-[40px] relative col-span-1 md:col-span-6 cursor-pointer">
         <div className="p-6">
           <div className="md:pt-[16px] md:text-[16px] text-white">
             Currated playlist
