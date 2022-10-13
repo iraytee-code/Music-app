@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Goldenage_img from "../../assets/images/GoldenAge.png";
-import ragarNblue_img from "../../assets/images/GoldenAge.png";
+import MusicImageTwo from "../../assets/images/MusicImageTwo.png";
 import { FavouriteCard } from "../../components";
 const ChartsCard = () => {
   return (
@@ -10,7 +10,7 @@ const ChartsCard = () => {
           Top charts
         </div>
         <div className=" grid grid-cols-3 overflow-x-auto  md:grid-cols-1 md:gap-3 md:mt-5">
-          <div className="m-0">
+          <div className="m-0 ">
             <FavouriteCard
               imageName={Goldenage_img}
               songTitle={"Golden age of 80s"}
@@ -20,7 +20,7 @@ const ChartsCard = () => {
           </div>
           <div className="ml-[200px] md:m-0">
             <FavouriteCard
-              imageName={ragarNblue_img}
+              imageName={MusicImageTwo}
               songTitle={"Reggae “n” blues"}
               artisteName={"Dj YK mule"}
               duration={"1:02:42"}
