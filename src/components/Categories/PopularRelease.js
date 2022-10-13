@@ -8,11 +8,11 @@ import NewRelease_img5 from "../../assets/images/Rectangle 18.png";
 import NewRelease_img6 from "../../assets/images/Rectangle 19.png";
 import NewRelease_img7 from "../../assets/images/Rectangle 20.png";
 
-const NewRelease = () => {
+const PopularRelease = () => {
   return (
     <Fragment>
       <div className="mb-6">
-        <div className="text-white text-[24px] p-3">New Release</div>;
+        <div className="text-white text-[24px] p-3">Popular In Your Area</div>;
         <div className="overflow-x-scroll scrollbar-hide">
           <div className="grid grid-flow-col auto-cols-max gap-10">
             <MusicCard
@@ -58,4 +58,4 @@ const NewRelease = () => {
   );
 };
 
-export default NewRelease;
+export default PopularRelease;

@@ -11,7 +11,7 @@ import { AiFillHeart } from "react-icons/ai";
 const HitsCard = () => {
   return (
     <Fragment>
-      <div className="p-2 md:p-4 bg-playlistBg rounded-[30px] md:rounded-[40px] relative col-span-1 md:col-span-6 cursor-pointer">
+      <div className="p-2 md:p-4 rounded-[30px] md:rounded-[40px] relative col-span-1 md:col-span-6 cursor-pointer bg-playlistBg hover:bg-gradient-to-tr from-playlistBg to-yellow-500">
         <div className="p-6">
           <div className="md:pt-[16px] md:text-[16px] text-white">
             Currated playlist
@@ -61,7 +61,7 @@ const HitsCard = () => {
         <div className="absolute top-0 bottom-0 right-0">
           <img src={BannerImg} alt="" className="hidden md:block" />
         </div>
-        <div className="absolute  bottom-0 right-0 mix-blend-overlay">
+        <div className="absolute  bottom-0 right-0 mix-blend-overlay animate-ping">
           <img src={BgVector} alt="" className="" />
         </div>
       </div>
