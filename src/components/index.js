@@ -11,3 +11,6 @@ export { default as MusicCard } from "./Cards/MusicCard";
 // categories
 export { default as NewRelease } from "./Categories/NewRelease";
 export { default as PopularRelease } from "./Categories/PopularRelease";
+
+//music player
+export { default as MusicPlayer } from "./MusicPlayer/MusicPlayer";
