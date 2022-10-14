@@ -4,8 +4,8 @@ import {
   HitsCard,
   NewRelease,
   PopularRelease,
+  MusicPlayer,
 } from "../../components";
-import NowPlayingImg from "../../assets/images/Rectangle 15.png";
 
 const DashBoard = () => {
   return (
@@ -14,19 +14,11 @@ const DashBoard = () => {
         <HitsCard />
         <ChartsCard />
       </div>
-      <NewRelease />
-      <PopularRelease />
-      <div className="absolute bottom-0 right-0 left-0 bg-glassBg bg-opacity-60 backdrop-filter backdrop-blur-lg ">
-        <div className="">
-          <div className="">
-            <img src={NowPlayingImg} alt="" />
-          </div>
-          <div className="">
-            <div className="">Seasons In</div>
-            <div className="">James</div>
-          </div>
-        </div>
+      <div className="mb-20 pb-6">
+        <NewRelease />
+        <PopularRelease />
       </div>
+      <MusicPlayer />
     </Fragment>
   );
 };
