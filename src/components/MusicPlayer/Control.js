@@ -56,10 +56,10 @@ const Control = ({
     <Fragment>
       <div className="">
         <div className="flex items-center justify-around my-2">
-          <BiShuffle size={30} />
+          <BiShuffle size={30} className="hidden lg:flex" />
           <BsFillSkipStartCircleFill
             size={30}
-            className="cursor-pointer px-1"
+            className="cursor-pointer px-1 hidden md:flex"
             onClick={prevMusic}
           />
           {
@@ -67,25 +67,25 @@ const Control = ({
             isPlaying ? (
               <BsFillPauseCircleFill
                 size={30}
-                className="cursor-pointer px-1"
+                className="cursor-pointer px-1 text-[#FACD66]"
                 onClick={playOrPause}
               />
             ) : (
               <BsFillPlayCircleFill
                 size={30}
-                className="cursor-pointer px-1"
+                className="cursor-pointer px-1 text-[#FACD66]"
                 onClick={playOrPause}
               />
             )
           }
           <BsFillSkipEndCircleFill
             size={30}
-            className="cursor-pointer px-1"
+            className="cursor-pointer px-1 ml-3"
             onClick={nextMusic}
           />
-          <FiRepeat size={30} />
+          <FiRepeat size={30} className="hidden lg:flex" />
         </div>
-        <div className="min-w-[600px] my-5">
+        <div className="min-w-[100%] w-[40vw] lg:w-[50vw] mt-10 hidden md:flex">
           <div
             className="bg-slate-700 h-2 rounded-md cursor-pointer w-full "
             onClick={checkMusicWidth}
