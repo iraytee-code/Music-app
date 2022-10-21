@@ -4,7 +4,6 @@ import {
   HitsCard,
   NewRelease,
   PopularRelease,
-  MusicPlayer,
 } from "../../components";
 
 const DashBoard = () => {
@@ -18,7 +17,6 @@ const DashBoard = () => {
         <NewRelease />
         <PopularRelease />
       </div>
-      <MusicPlayer />
     </Fragment>
   );
 };

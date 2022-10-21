@@ -14,3 +14,5 @@ export { default as PopularRelease } from "./Categories/PopularRelease";
 
 //music player
 export { default as MusicPlayer } from "./MusicPlayer/MusicPlayer";
+export { default as Control } from "./MusicPlayer/Control";
+export { default as VolumeControl } from "./MusicPlayer/VolumeControl";

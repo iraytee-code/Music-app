@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { NavBar, SideBar } from "../components";
+import { NavBar, SideBar, MusicPlayer } from "../components";
 import RoutePaths from "./RoutePaths/RoutePaths";
 
 const AppLayout = () => {
@@ -18,6 +18,7 @@ const AppLayout = () => {
           </main>
         </div>
       </div>
+      <MusicPlayer />
     </Fragment>
   );
 };

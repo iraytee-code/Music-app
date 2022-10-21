@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Goldenage_img from "../../assets/images/GoldenAge.png";
 import MusicImageTwo from "../../assets/images/MusicImageTwo.png";
 import { FavouriteCard } from "../../components";
+import { Link } from "react-router-dom";
 const ChartsCard = () => {
   return (
     <Fragment>
@@ -10,30 +11,30 @@ const ChartsCard = () => {
           Top charts
         </div>
         <div className=" grid grid-cols-3 overflow-x-auto  md:grid-cols-1 md:gap-3 md:mt-5">
-          <div className="m-0 ">
+          <Link to="/albums" className="m-0 ">
             <FavouriteCard
               imageName={Goldenage_img}
               songTitle={"Golden age of 80s"}
               artisteName={"Sean Swadler"}
               duration={"2:34:45"}
             />
-          </div>
-          <div className="ml-[200px] md:m-0">
+          </Link>
+          <Link to="/albums" className="ml-[200px] md:m-0">
             <FavouriteCard
               imageName={MusicImageTwo}
               songTitle={"Reggae “n” blues"}
               artisteName={"Dj YK mule"}
               duration={"1:02:42"}
             />
-          </div>
-          <div className="ml-[400px] md:m-0">
+          </Link>
+          <Link to="/albums" className="ml-[400px] md:m-0">
             <FavouriteCard
               imageName={Goldenage_img}
               songTitle={"Tomorrow’s tunes"}
               artisteName={"Obi Datti"}
               duration={"2:01:25"}
             />
-          </div>
+          </Link>
         </div>
       </div>
     </Fragment>
