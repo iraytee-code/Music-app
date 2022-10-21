@@ -2,6 +2,7 @@ import React, { Fragment, useState, useRef, useEffect } from "react";
 import { songsdata } from "../../data/audios";
 import { Control, VolumeControl } from "../../components";
 import MusicImage from "../../assets/images/Lead-image.png";
+import { ImVolumeMedium } from "react-icons/im";
 
 const MusicPlayer = () => {
   //state to keep track of the songs
@@ -33,17 +34,17 @@ const MusicPlayer = () => {
   }, [isPlaying]);
   return (
     <Fragment>
-      <div className="absolute bottom-0 right-0 left-0 scrollbar-hide bg-white py-5 backdrop-filter backdrop-blur-sm bg-opacity-10 text-white">
+      <div className="absolute bottom-0 right-0 left-0 scrollbar-hide bg-white pt-5 backdrop-filter backdrop-blur-sm bg-opacity-10 text-white">
         <div className="flex items-center justify-around">
           <div className="flex items-center">
             <div className="w-16 h-16">
               <img
                 src={MusicImage}
                 alt="music_image"
-                className="w-full h-full"
+                className="w-full h-full rounded-md"
               />
             </div>
-            <div className="px-2">
+            <div className="px-3">
               <p>{currentSong?.title}</p>
               <p>{currentSong.artisteName}</p>
             </div>
@@ -57,7 +58,16 @@ const MusicPlayer = () => {
             setCurrentSong={setCurrentSong}
             audioElement={audioElement}
           />
-          <VolumeControl />
+
+          <div className="hidden md:flex items-center">
+            <div className="mr-5">
+              <ImVolumeMedium size={20} />
+            </div>
+            <div>
+              {" "}
+              <VolumeControl />
+            </div>
+          </div>
         </div>
         <div className="my-5">
           <audio
