@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import BackGroundImg from "../../assets/images/Lead-image.png";
+// import BackGroundImg from "../../assets/images/Lead-image.png";
 
 const Albums = () => {
   return (
