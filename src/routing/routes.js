@@ -1,4 +1,4 @@
-import { DashBoard, Collections, Charts } from "../pages";
+import { DashBoard, Collections, Charts, Albums } from "../pages";
 
 const myPaths = [
   {
@@ -22,6 +22,14 @@ const myPaths = [
       {
         path: "/charts",
         component: Charts,
+      },
+    ],
+  },
+  {
+    elements: [
+      {
+        path: "/albums",
+        component: Albums,
       },
     ],
   },

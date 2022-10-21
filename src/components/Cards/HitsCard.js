@@ -23,7 +23,7 @@ const HitsCard = () => {
             <div className="">and so much more</div>
           </div>
           <div className="flex items-center pt-8 mb-4">
-            <div class="flex -space-x-4">
+            <div className="flex -space-x-4">
               <img
                 className="w-10 h-10 rounded-full cursor-pointer "
                 src={EllipseOne}

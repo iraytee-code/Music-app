@@ -1,57 +1,70 @@
-import React, { Fragment } from "react";
-import NowPlayingImg from "../../assets/images/Rectangle 15.png";
-import { BiShuffle } from "react-icons/bi";
-import { AiFillStepBackward, AiFillStepForward } from "react-icons/ai";
-import { BsPlayFill } from "react-icons/bs";
-import { HiPause } from "react-icons/hi";
-import { IoRepeatOutline } from "react-icons/io5";
-import VolumeSlider from "../FormElements/VolumeSlider";
-import { GiSpeaker, GiSpeakerOff } from "react-icons/gi";
-// import AudioPlayer from "react-h5-audio-player";
-// import "react-h5-audio-player/lib/styles.css";
+import React, { Fragment, useState, useRef, useEffect } from "react";
+import { songsdata } from "../../data/audios";
+import { Control, VolumeControl } from "../../components";
+import MusicImage from "../../assets/images/Lead-image.png";
 
 const MusicPlayer = () => {
+  //state to keep track of the songs
+  const [songs, setSongs] = useState(songsdata);
+  //state to keep track of the current song
+  const [isPlaying, setIsPlaying] = useState(false);
+  //state to keep track of the first song in the array
+  const [currentSong, setCurrentSong] = useState(songsdata[2]);
+
+  const audioElement = useRef();
+
+  const musicDetailsUpdate = () => {
+    //get the duration and time of the current song
+    const musicDuration = audioElement.current.duration;
+    const musicCurrentTime = audioElement.current.currentTime;
+    //update the state with the current time and duration
+    setCurrentSong({
+      //spread the current songs state
+      ...currentSong,
+      //update the duration and current time and attah a property of progress to it
+      progress: (musicCurrentTime / musicDuration) * 100,
+      //attach a lenght property to the music duration
+      lenght: musicDuration,
+    });
+  };
+
+  useEffect(() => {
+    isPlaying ? audioElement?.current?.play() : audioElement?.current?.pause();
+  }, [isPlaying]);
   return (
     <Fragment>
-      <div className="absolute bottom-0 right-0 left-0 bg-glassBg bg-opacity-30 backdrop-filter backdrop-blur-lg">
-        <div className="text-white flex items-center justify-around">
-          <div className="">
-            <img
-              src={NowPlayingImg}
-              alt=""
-              width={100}
-              height={100}
-              className="rounded-lg"
-            />
-          </div>
-          <div className="">
-            <div className="">Seasons In</div>
-            <div className="">James</div>
-          </div>
-          <div className="flex items-center justify-between">
-            <div className="px-5 cursor-pointer">
-              <BiShuffle size={30} />
-            </div>
-            <div className="px-5 cursor-pointer">
-              <AiFillStepBackward size={30} />
-            </div>
-            <div className="px-5 cursor-pointer">
-              <BsPlayFill size={30} />
-            </div>
-            {/* <div className="px-5 cursor-pointer">
-              <HiPause size={30} />
-            </div> */}
-            <div className="px-5 cursor-pointer">
-              <AiFillStepForward size={30} />
-            </div>
-            <div className="px-5 cursor-pointer">
-              <IoRepeatOutline size={30} />
-            </div>
-          </div>
+      <div className="absolute bottom-0 right-0 left-0 scrollbar-hide bg-white py-5 backdrop-filter backdrop-blur-sm bg-opacity-10 text-white">
+        <div className="flex items-center justify-around">
           <div className="flex items-center">
-            <GiSpeaker size={30} />
-            <VolumeSlider />
+            <div className="w-16 h-16">
+              <img
+                src={MusicImage}
+                alt="music_image"
+                className="w-full h-full"
+              />
+            </div>
+            <div className="px-2">
+              <p>{currentSong?.title}</p>
+              <p>{currentSong.artisteName}</p>
+            </div>
           </div>
+          <Control
+            isPlaying={isPlaying}
+            currentSong={currentSong}
+            songs={songs}
+            setIsPlaying={setIsPlaying}
+            setSongs={setSongs}
+            setCurrentSong={setCurrentSong}
+            audioElement={audioElement}
+          />
+          <VolumeControl />
+        </div>
+        <div className="my-5">
+          <audio
+            ref={audioElement}
+            src={currentSong?.url}
+            onTimeUpdate={musicDetailsUpdate}
+          />
         </div>
       </div>
     </Fragment>
