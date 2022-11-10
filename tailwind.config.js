@@ -12,7 +12,7 @@ module.exports = {
         secondary: "#FACD66",
         playlistBg: "#609EAF",
         glassBg: "#1d2123",
-        transparentBtn: "rgba(255, 255, 255, 0.07)",
+        transparentBtn: "rgba(255, 255, 255, 0.1)",
       },
       fontFamily: {
         quickSand: ["Quicksand, sans-serif"],
