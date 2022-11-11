@@ -11,7 +11,7 @@ const Albums = () => {
   return (
     <Fragment>
       <div
-        className="py-2 Album_background"
+        className="py-2 Album_background px-3 md:pr-3"
         style={{
           backgroundImage: `url(${LeadImage})`,
           backgroundRepeat: "no-repeat",
@@ -59,6 +59,64 @@ const Albums = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-5 pb-20 mb-10">
+          <div className="text-white py-3 grid grid-cols-6 bg-transparentBtn backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg px-2">
+            <div className="flex items-center ">
+              <div className=" w-[40px]">
+                <img
+                  src={image1}
+                  alt="album_image"
+                  className="rounded-lg W-[100%]"
+                />
+              </div>
+              <div className="md:pl-2 hidden md:flex">
+                <AiOutlineHeart size={20} />
+              </div>
+            </div>
+            <div className="grid grid-cols-2 items-center  md:flex justify-between md:items-center col-span-5 pl-2">
+              <div className="self-start pb-2 md:self-center text-sm  cursor-pointer md:text-md md:pb-0 md:order-1">
+                Let me love you ~ Krisx
+              </div>
+              <div className="justify-self-end self-start pb-2  cursor-pointer md:self-center text-sm md:text-md md:pb-0 md:order-3">
+                <BsThreeDotsVertical fill=" #FACD66" />
+              </div>
+              <div className="self-end md:self-center text-sm  cursor-pointer pb-0 md:text-md md:order-2">
+                Single
+              </div>
+              <div className="justify-self-end self-end  cursor-pointer md:self-center pb-0 text-sm md:text-md md:order-4">
+                4:17
+              </div>
+            </div>
+          </div>
+
+          <div className="text-white py-3 grid grid-cols-6 bg-transparentBtn backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg px-2">
+            <div className="flex items-center ">
+              <div className=" w-[40px]">
+                <img
+                  src={image1}
+                  alt="album_image"
+                  className="rounded-lg W-[100%]"
+                />
+              </div>
+              <div className="md:pl-2 hidden md:flex">
+                <AiOutlineHeart size={20} />
+              </div>
+            </div>
+            <div className="grid grid-cols-2 items-center  md:flex justify-between md:items-center col-span-5 pl-2">
+              <div className="self-start pb-2 md:self-center text-sm  cursor-pointer md:text-md md:pb-0 md:order-1">
+                Let me love you ~ Krisx
+              </div>
+              <div className="justify-self-end self-start pb-2  cursor-pointer md:self-center text-sm md:text-md md:pb-0 md:order-3">
+                <BsThreeDotsVertical fill=" #FACD66" />
+              </div>
+              <div className="self-end md:self-center text-sm  cursor-pointer pb-0 md:text-md md:order-2">
+                Single
+              </div>
+              <div className="justify-self-end self-end  cursor-pointer md:self-center pb-0 text-sm md:text-md md:order-4">
+                4:17
+              </div>
+            </div>
+          </div>
+
           <div className="text-white py-3 grid grid-cols-6 bg-transparentBtn backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg px-2">
             <div className="flex items-center ">
               <div className=" w-[40px]">
