@@ -5,12 +5,13 @@ module.exports = {
     extend: {
       colors: {
         light: "#EFEEE0",
-        dark: "#1D2123",
+        dark: "#1D2123",    
         altDark: "#A4C7C6",
         primary: "#A4C7C6",
         altPrimary: "#A4C7C6",
         secondary: "#FACD66",
         playlistBg: "#609EAF",
+        secondaryDark: "#33373B5E",
         glassBg: "#1d2123",
         transparentBtn: "rgba(255, 255, 255, 0.1)",
       },
