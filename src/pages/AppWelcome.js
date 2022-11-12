@@ -47,7 +47,7 @@ const AppWelcome = () => {
   <div className="text-secondary">music</div>
 </div>
 <div className="py-10 font-semibold text-light">A platform for all music fans</div>
-<div><button  className="w-[350px]  text-dark bg-altPrimary text-center rounded-md py-5 font-bold" onClick={handleClick}> Listen Now</button></div>
+<div><button  className="w-[320px] md:w-[350px]  text-dark bg-altPrimary text-center rounded-md py-5 font-bold" onClick={handleClick}> Listen Now</button></div>
     </div>
 
 <div className="flex items-center justify-center lg:justify-start py-10 image_container">
