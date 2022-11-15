@@ -3,7 +3,6 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap");
 
-
 .Album_background::before {
   content: "";
   position: absolute;
@@ -14,3 +13,23 @@
   background-color: #1d2123c6;
   background: linear-gradient(#1d2123c6, #0f1113);
 }
+
+.dropdown-menu.active {
+  display: block;
+  transition: var(--speed) ease;
+}
+
+.dropdown-menu.inactive {
+  display: none;
+  transition: var(--speed) ease;
+}
+
+.dropdown-menu.active.hamburger_btn{
+  display: none;
+}
+
+/* .hamburger_btn.inactive{
+  display: flex;
+} */
+
+
