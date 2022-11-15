@@ -24,12 +24,6 @@
   transition: var(--speed) ease;
 }
 
-.dropdown-menu.active.hamburger_btn{
-  display: none;
-}
 
-/* .hamburger_btn.inactive{
-  display: flex;
-} */
 
 
