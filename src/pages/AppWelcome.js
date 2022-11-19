@@ -31,14 +31,14 @@ const [open, setOpen] = useState(false);
           <div className='hamburger_btn'><GiHamburgerMenu size={25} /></div>
         </div>
         <div className="hidden flex-col md:flex-row justify-between md:flex">
-        <button className="bg-secondary rounded-full px-4 py-2 flex items-center align-center font-bold text-sm md:text-md  mx-3">
+        <button className="text-white hover:underline px-4 py-2 flex items-center align-center font-bold text-sm md:text-md  mx-3">
             Support
           </button>
 
-          <button className="bg-green-500 rounded-full px-4 py-2 flex items-center align-center font-bold text-sm md:text-md mx-3">
+          <button className=" text-white  hover:underline rounded-full px-4 py-2 flex items-center align-center font-bold text-sm md:text-md mx-3">
             Subscription
           </button>
-          <button className="bg-altPrimary rounded-full px-4 py-2 flex items-center align-center font-bold text-sm md:text-md mx-3">
+          <button className="text-white hover:underline px-4 py-2 flex items-center align-center font-bold text-sm md:text-md mx-3">
             <div onClick={handleClick}>Listen</div>
           </button>
         </div>
@@ -48,14 +48,14 @@ const [open, setOpen] = useState(false);
 
 <div className={`dropdown-menu ${open? 'active' : 'inactive'} `}>
 <div className=" h-[100vh] w-fit px-20 flex flex-col justify-evenly md:hidden backdrop-blur-md  absolute">
-        <button className="bg-secondary rounded-full px-4 py-2  mb-5 align-center font-bold text-sm md:text-md ">
+        <button className=" text-white hover:underline px-4 py-2  mb-5 align-center font-bold text-sm md:text-md ">
             Support
           </button>
 
-          <button className="bg-green-500 rounded-full px-4 py-2 flex items-center mb-5 align-center font-bold text-sm md:text-md ">
+          <button className="text-white hover:underline px-4 py-2 flex items-center mb-5 align-center font-bold text-sm md:text-md ">
             Subscription
           </button>
-          <button className="bg-altPrimary rounded-full px-4 py-2  font-bold text-sm md:text-md ">
+          <button className="text-white hover:underline px-4 py-2  font-bold text-sm md:text-md ">
             <div onClick={handleClick}>Listen</div>
           </button>
         
