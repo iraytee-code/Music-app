@@ -2,6 +2,7 @@
 export { default as NavBar } from "./NavBar/NavBar";
 export { default as SideBar } from "./SideBar/SideBar";
 export {default as NavBarHome} from "./NavBarHome/NavBarHome";
+export {default as AppHome} from "./AppHome/AppHome";
 
 // cards
 export { default as HitsCard } from "./Cards/HitsCard";
