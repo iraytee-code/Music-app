@@ -5,6 +5,7 @@ import { RiRadioFill, RiVideoLine } from "react-icons/ri";
 import { IoPerson, IoLogOutOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import LogoImg from "../../assets/images/logo.svg";
+// import { Collections } from "../../pages/Collections/";
 
 const SideBar = () => {
   return (
@@ -18,7 +19,7 @@ const SideBar = () => {
             <Link className="flex items-center py-[15px] cursor-pointer hover:text-yellow-400">
               <AiOutlineHome size={30} />
             </Link>
-            <Link className="flex items-center py-[15px] cursor-pointer hover:text-yellow-400">
+            <Link to ="../../pages/Collections" className="flex items-center py-[15px] cursor-pointer hover:text-yellow-400">
               <BsCollectionPlay size={30} />
             </Link>
             <Link className="flex items-center py-[15px] cursor-pointer hover:text-yellow-400">

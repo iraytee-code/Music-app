@@ -6,7 +6,7 @@ import { BsCollectionPlay } from "react-icons/bs";
 import { RiRadioFill, RiVideoLine } from "react-icons/ri";
 import { IoPerson, IoLogOutOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-
+import { Collections } from "../../pages";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   return (
@@ -39,19 +39,17 @@ const NavBar = () => {
       {/* side menu navigation */}
       <div
         className={
-          nav
-            ? "fixed top-0 left-0 h-screen w-[350px] bg-dark z-10 duration-1000"
-            : "fixed top-0 left-[-1000px] h-screen w-[350px] bg-white z-10 duration-1000"
+          nav ? "fixed top-0 left-0 h-screen w-[350px] bg-dark z-10 duration-1000 md:hidden" : "fixed top-0 left-[-1000px] h-screen w-[350px] bg-white z-10 duration-1000"
         }
       >
         <ul className=" text-light/50 pt-[80px] pl-[25px]">
-          <Link className="flex items-center py-[25px] cursor-pointer hover:text-yellow-400">
+          <Link  className="flex items-center py-[25px] cursor-pointer hover:text-yellow-400">
             <span className="px-3">
               <AiOutlineHome size={30} />
             </span>
             <span className="font-bold text-[17px]">Home</span>
           </Link>
-          <Link className="flex items-center py-[25px] cursor-pointer hover:text-yellow-400">
+          <Link to= {Collections} className="flex items-center py-[25px] cursor-pointer hover:text-yellow-400">
             <span className="px-3">
               <BsCollectionPlay size={30} />
             </span>

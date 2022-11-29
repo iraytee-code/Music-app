@@ -3,6 +3,7 @@ import Goldenage_img from "../../assets/images/GoldenAge.png";
 import MusicImageTwo from "../../assets/images/MusicImageTwo.png";
 import { FavouriteCard } from "../../components";
 import { Link } from "react-router-dom";
+// import { Collections } from "../../pages/Collections/Collections";
 const ChartsCard = () => {
   return (
     <Fragment>

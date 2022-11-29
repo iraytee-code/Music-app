@@ -9,7 +9,7 @@ export { default as HitsCard } from "./Cards/HitsCard";
 export { default as ChartsCard } from "./Cards/ChartsCard";
 export { default as FavouriteCard } from "./Cards/FavouriteCard";
 export { default as MusicCard } from "./Cards/MusicCard";
-
+export {default as CollectionCard} from "./CollectionCard/CollectionCard";
 // categories
 export { default as NewRelease } from "./Categories/NewRelease";
 export { default as PopularRelease } from "./Categories/PopularRelease";
@@ -18,3 +18,4 @@ export { default as PopularRelease } from "./Categories/PopularRelease";
 export { default as MusicPlayer } from "./MusicPlayer/MusicPlayer";
 export { default as Control } from "./MusicPlayer/Control";
 export { default as VolumeControl } from "./MusicPlayer/VolumeControl";
+
