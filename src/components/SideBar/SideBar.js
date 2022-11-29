@@ -19,7 +19,7 @@ const SideBar = () => {
             <Link className="flex items-center py-[15px] cursor-pointer hover:text-yellow-400">
               <AiOutlineHome size={30} />
             </Link>
-            <Link to ="../../pages/Collections" className="flex items-center py-[15px] cursor-pointer hover:text-yellow-400">
+            <Link to ="./Collections" className="flex items-center py-[15px] cursor-pointer hover:text-yellow-400">
               <BsCollectionPlay size={30} />
             </Link>
             <Link className="flex items-center py-[15px] cursor-pointer hover:text-yellow-400">

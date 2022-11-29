@@ -6,7 +6,6 @@ import { BsCollectionPlay } from "react-icons/bs";
 import { RiRadioFill, RiVideoLine } from "react-icons/ri";
 import { IoPerson, IoLogOutOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { Collections } from "../../pages";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   return (
@@ -49,7 +48,7 @@ const NavBar = () => {
             </span>
             <span className="font-bold text-[17px]">Home</span>
           </Link>
-          <Link to= {Collections} className="flex items-center py-[25px] cursor-pointer hover:text-yellow-400">
+          <Link to= "./Collections" className="flex items-center py-[25px] cursor-pointer hover:text-yellow-400">
             <span className="px-3">
               <BsCollectionPlay size={30} />
             </span>
