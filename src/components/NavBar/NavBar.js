@@ -42,7 +42,7 @@ const NavBar = () => {
         }
       >
         <ul className=" text-light/50 pt-[80px] pl-[25px]">
-          <Link  className="flex items-center py-[25px] cursor-pointer hover:text-yellow-400">
+          <Link to ='./DashBoard'  className="flex items-center py-[25px] cursor-pointer hover:text-yellow-400">
             <span className="px-3">
               <AiOutlineHome size={30} />
             </span>
