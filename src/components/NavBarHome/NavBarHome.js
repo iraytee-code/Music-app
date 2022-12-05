@@ -45,7 +45,7 @@ const NavBarHome = () => {
         </div>
       </div>
 
-      <div className={`dropdown-menu ${open ? "active" : "inactive"} `}>
+      <div className={`dropdown-menu ${open ? "active" : "inactive"}  `}>
         <div className=" h-[100vh] w-fit px-20 flex flex-col justify-evenly md:hidden backdrop-blur-md  absolute">
           <button className=" text-white hover:underline hover:text-altPrimary px-4 py-2  mb-5 align-center font-bold text-sm md:text-md ">
             Support
