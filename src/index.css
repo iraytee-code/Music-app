@@ -16,12 +16,14 @@
 
 .dropdown-menu.active {
   display: block;
-  transition: var(--speed) ease;
+  /* transition: var(--speed) ease; */
+  transition-duration: 1000ms;
 }
 
 .dropdown-menu.inactive {
   display: none;
-  transition: var(--speed) ease;
+  /* transition: var(--speed) ease; */
+  transition-duration: 1000ms;
 }
 
 
